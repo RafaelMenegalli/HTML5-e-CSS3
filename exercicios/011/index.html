@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Flexiveis</title>
+    <style>
+        img{
+            border: 7px solid black;
+        }
+        audio{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>imagens Flixiveis</h1>
+    <audio controls loop preload="metadata">
+        <source src="midia/audio/bon jovi - miracle.mp3" type="audio/mpeg">
+        <p>Caso não reproduza o audio <a href="midia/audio/bon jovi - miracle.mp3">Baixe Aqui</a></p>
+    </audio>
+    <h2>Imagens Paisagem</h2>
+    <picture>
+        <source media="(max-width:740px )" srcset="midia/img/img_paisagem_p.png" type="image/png">
+        <source media="(max-width:1240px )" srcset="midia/img/img_paisagem_m.png" type="image/png">
+        <img src="midia/img/img_paisagem_g.png" alt="Imagem Grande">
+    </picture>
+</body>
+</html>

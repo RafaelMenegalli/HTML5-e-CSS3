@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            background-color: rgb(27, 25, 25);
+            color: white;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a::after{
+            content: ' -->';
+        }
+        a::before{
+            content: '<-- ';
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:visited{
+            color: lightblue;
+        }
+        a:active{
+            color: rgb(107, 175, 107);
+        }
+    </style>
+</head>
+<body>
+    <h1>Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=Pe4f8M1nw_g" target="_blank">Link_#1</a></li>
+        <li><a href="#2">Link_#2</a></li>
+        <li><a href="#3">Link_#3</a></li>
+        <li><a href="#4">Link_#4</a></li>
+    </ul>
+</body>
+</html>

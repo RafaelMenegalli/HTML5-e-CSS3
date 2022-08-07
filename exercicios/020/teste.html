@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
+    <title>Site apenas de Teste!</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: #025951;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px #01221f;
+            margin: 5px;
+            padding: 2px;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        li{
+            font-size: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: white;
+        }
+        div > p{
+            opacity: 0;
+            height: 300px;
+            background-color: white;
+            border-radius: 8px;
+            text-align: center;
+            padding: 3px;
+        }
+        div:hover > p{
+            transition: 1s;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div>
+                    <a href="#">
+                        <li>Pág_1</li>
+                    </a>
+                    <p>Texto Escondido...</p>
+                </div>
+                <a href="#">
+                    <li>Pág_2</li>
+                </a>
+                <a href="#">
+                    <li>Pág_3</li>
+                </a>
+                <a href="#">
+                    <li>Pág_4</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasse</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: black;
+            font-size: 24px;
+        }
+        div{
+            width: 150px;
+            height: 120px;
+            padding: 5px;
+        }
+        div > p{
+            opacity: 0;
+        }
+        div:hover > p{
+            transition: 1s;
+            opacity: 1;
+        }
+        div:hover{
+            color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de Pseudoclasses!</h1>
+    <p>Um paragrafo simples</p>
+    <div>
+        Clique Aqui!
+        <p>Texto Escondido...</p>
+    </div>
+</body>
+</html>

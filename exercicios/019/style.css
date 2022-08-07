@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body{
+    background-color: #C15FFA;
+}
+h1{
+    color: #552A6E;
+}
+h1#principal{
+    color: #291435;
+    text-align: center;
+}
+h2{
+    color: #291435;
+}
+h2.css{
+    text-align: center;
+}
+h2.html{
+    text-align: center;
+}
+.destaque{
+    background-color: whitesmoke;
+    border-radius: 1000px;
+}
