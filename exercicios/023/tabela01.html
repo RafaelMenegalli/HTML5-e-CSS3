@@ -20,16 +20,19 @@
             border: 2px solid white;
             border-collapse: collapse;
             margin: 0 auto;
-        }
-
-        tr.rosa{
-            background-color: lightcoral;
+            width: 400px;
+            height: 400px;
+            text-align: center;
         }
 
         td{
             border: 1px solid white;
-            width: 100px;
             padding: 5px;
+            vertical-align: center;
+        }
+
+        .numero{
+            text-align: right;
         }
     </style>
 </head>
@@ -37,12 +40,12 @@
     <main>
         <h1>Criando Primeira tabela</h1>
         <table>
-            <tr class="rosa">
-                <td>A1</td>
+            <tr>
+                <td class="numero">A1</td>
                 <td>B1</td>
                 <td>C1</td>
                 <td>D1</td>
-                <td>E1</td>
+                <td class="numero">E1</td>
             </tr>
             <tr>
                 <td>A2</td>
@@ -51,11 +54,11 @@
                 <td>D2</td>
                 <td>E2</td>
             </tr>
-            <tr class="rosa">
-                <td>A3</td>
+            <tr>
+                <td class="numero">A3</td>
                 <td>B3</td>
                 <td>C3</td>
-                <td>D3</td>
+                <td class="numero">D3</td>
                 <td>E3</td>
             </tr>
         </table>
