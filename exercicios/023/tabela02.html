@@ -10,14 +10,34 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        h1{
+            color: lightcoral;
+        }
+
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            background-color: lightgreen;
+            padding: 8px;
+            font-weight: bolder;
         }
 
         thead, tfoot{
             color: white;
-            background-color: rgb(134, 134, 134);
+            background-color: lightslategray;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
+        }
+        
+        tbody > tr:nth-child(even){
+            background-color: lightblue;
         }
 
         td, th{
@@ -33,9 +53,12 @@
 <body>
     <h1>Criando Tabelas Grandes</h1>
     <table>
+        <caption>
+            População por Estado
+        </caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 90px;">População</th>
         </thead>
         <tbody>
             <tr>
@@ -58,10 +81,122 @@
                 <td> Paraná</td>
                 <td class="num">10 444 526</td>
             </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td class="num">######</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td class="num"><strong>#######</strong></td>
             </tr>
         </tfoot>
