@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe - link (Mesmo Aquivo)</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        ul{
+            text-align: center;
+            padding: 20px;
+            list-style-position: inside;
+        }
+
+        ul li{
+            padding: 5px;
+        }
+
+        .frame{
+            width: 95vw;
+            height: 300px;
+            display: block;
+            margin: 0 auto;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Links para paginas em iframe</h1>
+     <ul>
+        <li><a href="pags/pag01.html" target="frame">Pagina 1</a></li>
+        <li><a href="pags/pag02.html" target="frame">Pagina 2</a></li>
+        <li><a href="#">Pagina 3</a></li>
+        <li><a href="#">Pagina 4</a></li>
+     </ul> <br> <br>
+
+     <!--<iframe src="pags/pag_inicial.html" class="frame" name="frame">
+        <p class="erro">Seu navegador não é compativel</p>
+     </iframe>-->
+
+     <iframe srcdoc="<h1>Escolha uma das Paginas a Cima </h1>" class="frame" name="frame">
+        <p class="erro">Seu navegador não é compativel</p>
+     </iframe>
+</body>
+</html>
