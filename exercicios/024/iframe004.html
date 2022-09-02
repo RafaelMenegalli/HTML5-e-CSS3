@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança em iframe</title>
+</head>
+<body>
+    <h1>Tornando os iframes mais seguros</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quo saepe dolorem pariatur tempora nisi facere ducimus nobis magnam, expedita quidem, laudantium maiores hic adipisci animi libero ea incidunt dolore.</p>
+    
+    <iframe src="pags/pag03.html" sandbox="sandbox" referrerpolicy="no-referrer">
+        <p>Seu navegador não é compativel com iframe</p>
+    </iframe>
+
+    <hr>
+
+    <iframe src="pags/pag03.html" sandbox="allow-forms allow-scripts allow-same-origin" referrerpolicy="no-referrer"></iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quaerat sit? Corporis, nemo. Quo nostrum placeat sapiente officiis, animi praesentium, voluptatibus neque quia et soluta inventore reiciendis doloribus voluptatem similique?</p>
+</body>
+</html>
