@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-b">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipos de input</title>
+</head>
+<body>
+    <h1>Formulario de Aluno</h1>
+    <form method="get" autocomplete="off">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required placeholder="Apenas o Primero Nome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome</label>   
+            <input type="text" name="sobrenome" id="isobrenome" required placeholder="Apenas o Sugundo Nome">
+        </p>
+        <p>
+            <label for="imes">Mês Letivo</label>
+            <input type="month" name="mes" id="imes" >
+        </p>
+        <p>
+            <label for="inota1">Primeira Nota</label>
+            <input type="number" name="nota1" id="inota1" required placeholder="Nota 1" min="0" max="10" step="0.5">
+        </p>
+        <p>
+            <label for="inota2">Segunda Nota</label>
+            <input type="number" name="nota2" id="inota2"required placeholder="Nota 2" min="0" max="10" step="0.5">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
