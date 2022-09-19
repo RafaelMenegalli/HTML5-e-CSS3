@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        select{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>AAAAAAAAAAAAAAA</h1>
+    <form action="#" method="get" autocomplete="on">
+        <label for="iestado">Estados</label>
+        <select name="estados" id="iestados">
+            <option value="" selected>Selecione seu Estado</option>
+            <optgroup label="Sudeste">
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Gerais</option>
+            </optgroup>
+            <optgroup label="Nordeste">
+                <option value="pe">Pernambuco</option>
+                <option value="bh">Bahia</option>
+                <option value="na">Natal</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+
+        <label for="iprofissao">Profissão</label>
+        <input type="text" name="profissao" id="iprofissao" list="listprofissao">
+        <datalist id="listprofissao">
+            <option value="professor">Professor</option>
+            <option value="programador">Programador</option>
+            <option value="desenvolvador">Desenvolvedor</option>
+            <option value="lixeiro">Lixeiro</option>
+        </datalist>
+
+        <br><br>
+
+        <label for="imenssagem">Sua Menssagem Aqui</label> <br>
+        <textarea name="menssagem" id="imenssagem" cols="20" rows="6"></textarea>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
