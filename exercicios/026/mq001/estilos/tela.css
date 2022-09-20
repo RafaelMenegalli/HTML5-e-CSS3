@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* Estilos para a tela principal do site exibida em aparelhos eletronicos */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: lightgreen;
+    text-align: center;
+    padding: 20px;
+}
+
+header nav{
+    margin-top: 15px;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(67, 131, 67, 0.568);
+}
+
+nav ul li:hover{
+    background-color: rgba(94, 175, 94, 0.568);
+    cursor: pointer;
+}
+
+main{
+    margin: 30px;
+}
+
+section{
+    width: 700px;
+    margin: 0 auto;
+}
+
+footer{
+    text-align: center;
+    padding: 25px;
+}

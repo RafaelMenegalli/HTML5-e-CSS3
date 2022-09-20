@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* Estilos para impressoras (print) */
+
+*{
+    padding: 10px;
+    margin: 10px;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header nav{
+    display: none;
+}
