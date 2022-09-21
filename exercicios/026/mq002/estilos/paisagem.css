@@ -1,3 +1,8 @@
 @charset "utf-8";
 
-/*Estilos apenas para dispositivos em pé (Paisagem)*/
+/*Estilos apenas para dispositivos deitados (Landscape)*/
+
+body{
+    background-image: url('../imagens/cev-landscape.jpg');
+    background-position: left bottom;
+}

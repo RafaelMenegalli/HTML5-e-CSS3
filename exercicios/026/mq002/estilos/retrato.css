@@ -1,3 +1,8 @@
 @charset "utf-8";
 
-/*Estiolos apenas para Dispositivos deitados*/
+/*Estiolos apenas para Dispositivos em  pé (Portrait)*/
+
+body{
+    background-image: url('../imagens/cev-portrait.jpg');
+    background-position: center bottom;
+}
