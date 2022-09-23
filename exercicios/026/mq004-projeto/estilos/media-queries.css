@@ -1,3 +1,140 @@
 @charset "UTF-8";
 
 /*Estilos especificos (tamanhos especificos)*/
+
+/*typical device breakpoints*/
+
+@media print{
+    body{
+        background-image: url(../imagens/back-print.jpg);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.4em;
+    }
+
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+    main::after{
+        content: 'Site criado por Rafael Menegalli';
+        text-decoration: overline;
+    }
+
+    .pc{
+        display: none;
+    }
+    
+    .celular{
+        display: none;
+    }
+    
+    .impressora{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .tablet{
+        display: none;
+    }
+    
+    .tv{
+        display: none;
+    }
+}
+
+/*Tablests*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main{
+        width: 450px;
+    }
+
+    .pc{
+        display: none;
+    }
+    
+    .celular{
+        display: none;
+    }
+    
+    .impressora{
+        display: none;
+    }
+    
+    .tablet{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .tv{
+        display: none;
+    }
+}
+
+/*Dasktops*/
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main{
+        width: 550px;
+    }
+
+    .pc{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .celular{
+        display: none;
+    }
+    
+    .impressora{
+        display: none;
+    }
+    
+    .tablet{
+        display: none;
+    }
+    
+    .tv{
+        display: none;
+    }
+}
+
+
+/*Grandes Telas */
+@media screen and (min-width: 1441px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 700px;
+    }
+
+    .pc{
+        display: none;
+    }
+    
+    .celular{
+        display: none;
+    }
+    
+    .impressora{
+        display: none;
+    }
+    
+    .tablet{
+        display: none;
+    }
+    
+    .tv{
+        display: block;
+        margin: 0 auto;
+    }
+}
