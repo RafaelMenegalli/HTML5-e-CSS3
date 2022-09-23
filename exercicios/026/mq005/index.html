@@ -46,6 +46,7 @@
         function mudouTamanho(){
             if(window.innerWidth >= 700){
                 document.getElementById('itens').style.display = 'block'
+                itens.reload(forcedReload)
             } else{
                 itens.style.display = 'none'
             }
